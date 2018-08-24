@@ -3,6 +3,7 @@ layout: page
 title: About
 permalink: /about/
 feature-img: "assets/img/pexels/circuit.jpeg"
+category : intro
 tags: [About, Intro]
 ---
 # Info
@@ -14,7 +15,7 @@ tags: [About, Intro]
 # Contact
 - <b> email : </b>
 <a href="mailto:gunbin91@gmail.com" title="{{ site.theme_settings.str_email }}">gunbin91@gmail.com</a>
-- <b> telephone : </b>010-2885-8163
+- <b> telephone : </b>~~010-2885-8163~~
 
 # Skill Set
 
@@ -59,3 +60,7 @@ tags: [About, Intro]
 - GitHub
 - Gitlab
 - Azure
+
+### Library
+- JQuery
+- Tensorflow

@@ -8,14 +8,14 @@ description: "A website with blog posts and pages" # used by search engines
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  title: blog's home # blog's title
+  title: Developer home # blog's title
   avatar: assets/img/triangle.svg
   favicon: assets/favicon.ico
   gravatar: # Email MD5 hash
 
   # Header and footer text
   header_text: > #two or three lines to describe your site
-     <h2> Wellcome to Developer Blog ! </h2>
+     <h2> Development Note </h2>
   header_text_feature_image: assets/img/pexels/triangular.jpeg
   footer_text: >
    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
@@ -97,7 +97,6 @@ theme_settings:
 # PAGINATION
 paginate: 5
 paginate_path: "blog/page:num"
-
 
 # PORTFOLIO
 collections:
