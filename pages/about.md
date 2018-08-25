@@ -5,6 +5,7 @@ permalink: /about/
 feature-img: "assets/img/pexels/circuit.jpeg"
 category : intro
 tags: [About, Intro]
+order: 0
 ---
 # Info
 
@@ -16,6 +17,9 @@ tags: [About, Intro]
 - <b> email : </b>
 <a href="mailto:gunbin91@gmail.com" title="{{ site.theme_settings.str_email }}">gunbin91@gmail.com</a>
 - <b> telephone : </b>~~010-2885-8163~~
+
+# Certification
+- 정보처리기사
 
 # Skill Set
 

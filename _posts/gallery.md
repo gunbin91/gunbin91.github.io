@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Gallery
 subtitle: From the pexels folder
 permalink: /gallery/

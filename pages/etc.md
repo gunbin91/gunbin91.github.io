@@ -1,21 +1,21 @@
 --- 
 layout: page
-title : GithubPage
-permalink: /githubPage/
-subtitle: "깃허브 페이지 사용법" 
+title : Etc
+permalink: /etc/
+subtitle: "기타" 
 feature-img: "assets/img/pexels/computer.jpeg"
-category : githubpage
+category : etc
 date : 2018-08-25
-tags: [github, githubpage, jekyll, hexo, blog ]
-order: 2
+tags: [etc]
+order: 100
 ---
 
 <div align="center">
 {% for post in site.categories[page.category] %}
-   <div style="width:75%;">
+   <div style="width:50%;">
     <h3 align="left">
         <a href="{{ post.url | absolute_url }}" style="text-decoration:none;">
-        [ GitHubPage ] {{ post.title }}
+        [ Etc ] {{ post.title }}
         </a>
     </h3>
     </div>

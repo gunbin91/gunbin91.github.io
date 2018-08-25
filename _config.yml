@@ -12,7 +12,6 @@ theme_settings:
   avatar: assets/img/triangle.svg
   favicon: assets/favicon.ico
   gravatar: # Email MD5 hash
-
   # Header and footer text
   header_text: > #two or three lines to describe your site
      <h2> Development Note </h2>
@@ -60,7 +59,7 @@ theme_settings:
 
   # Scripts / Features 
   google_analytics: # Tracking ID, e.g. "UA-000000-01"
-  disqus_shortname:
+  disqus_shortname: true
   katex: true # Enable if using math markup
   
   special_page:
