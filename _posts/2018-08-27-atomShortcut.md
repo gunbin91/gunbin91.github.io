@@ -59,37 +59,5 @@ categories: [ etc ]
 - <font color="orange">Shift + Ctrl + ←, →</font>
 <br/> 단어별 텍스트 선택
 
-<script type="text/javascript" src="/assets/js/ZeroClipboard.js"></script>
-
-<div id="clipBoardCopyBtnWrap" class="btn_clipboard_copy">
-<button id="clipBoardCopyBtn" class="btn_clipboard_copy" type="button">소스복사</button>
-</div>
-<div id="clipBoardCopy">복사할 컨텐츠의 내용들</div>
-
-<script type="text/javascript">
-var urlCopy = "test";               //  URL 셋팅
-if (window.clipboardData) {
-	$(".btn_clipboard_copy").on("click",function(){
-		window.clipboardData.setData('Text',urlCopy);
-	})
-}else{
-	var clip = new ZeroClipboard($(".btn_clipboard_copy"), {
-		moviePath: "assets/js/ZeroClipboard.swf"
-	});
-	clip.addEventListener('mousedown',function() {
-        clip.setText("수정됌");
-    });
-    clip.addEventListener('complete',function(client,text) {
-		alert('copied: ' + text);
-	});
-}
-</script>
-
-
-<div id="contents_area" onCopy="javascript:copy_play();">
-여기를 마우스로 드래그 해서 복사한 다음 다른 곳에 붙여넣기를 해보세요.
-</div>
-
-
 <br/>
 <hr/>

@@ -38,8 +38,17 @@
     
 </script>
 
-<!-- 복사 라이브러리 -->
-<script  src="https://cdn.rawgit.com/zenorocha/clipboard.js/v2.0.0/dist/clipboard.min.js" ></script>
+<!-- 출처 스크립트 -->
+<script>
+window.addEventListener('copy', function (e){
+     document.execCommand('copy');
+     var retUrl = document.URL;
+     e.preventDefault();
+     e.clipboardData.setData('text/plain', document.getSelection() + 
+                             "\n\n[출처]"+retUrl+"  [gunbin91 Blog]");
+}, false)
+</script>
+
 <!-- JQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
