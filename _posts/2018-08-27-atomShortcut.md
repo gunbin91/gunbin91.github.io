@@ -72,12 +72,15 @@ if (window.clipboardData) {
 	$(".btn_clipboard_copy").on("click",function(){
 		window.clipboardData.setData('Text',urlCopy);
 	})
-} else {
+}else{
 	var clip = new ZeroClipboard($(".btn_clipboard_copy"), {
 		moviePath: "assets/js/ZeroClipboard.swf"
 	});
-	clip.addEventListener('mouseDown',function() {
-		clip.setText(urlCopy+"제로클립보드 작동");
+	clip.addEventListener('mousedown',function() {
+        clip.setText("수정됌");
+    });
+    clip.addEventListener('complete',function(client,text) {
+		alert('copied: ' + text);
 	});
 }
 </script>
