@@ -60,20 +60,37 @@ categories: [ etc ]
 <br/> 단어별 텍스트 선택
 
 <script type="text/javascript" src="/assets/js/ZeroClipboard.js"></script>
-<script type="text/javascript">
-var clip = null;
-function init() {
-    clip = new ZeroClipboard.Client();
-    ZeroClipboard.moviePath = '/assets/js/ZeroClipboard.swf';
-    clip.setHandCursor( true );
-    clip.setText('수정!!!!!') //이 부분을 자신한테 맞게 수정하면 된다.
-    clip.glue( 'd_clip_button' );
-}    
-</script>
 
-<body onLoad="init()">
-<span id="d_clip_button" class="my_clip_button">복사하기</span>
-</body>
+<div id="clipBoardCopyBtnWrap" style="position: relative;">
+<button id="clipBoardCopyBtn" type="button">소스복사</button>
+</div>
+<div id="clipBoardCopy">복사할 컨텐츠의 내용들</div>
+
+<script type="text/javascript">
+if (window.clipboardData) {
+   var idxs = $( '#clipBoardCopy' ).text();
+   $('#clipBoardCopyBtn').bind('click',function(){
+      window.clipboardData.setData('Text',idxs);
+      alert('복사되었습니다.');
+   });
+} else {
+   var idxs = $('#clipBoardCopy').text();          //텍스트 가져오기
+   ZeroClipboard.moviePath = '/assets/js/ZeroClipboard.swf';    //SWF파일 경로
+   clip = new ZeroClipboard.Client();                //객체 생성
+   clip.setHandCursor( true );
+    //마우스 오버시 복사함
+   clip.addEventListener('mouseOver', function (client) {
+      copyText=idxs;
+      clip.setText(copyText);  
+   });
+    //클릭시에 메세지
+   clip.addEventListener('complete', function (client, text) { 
+      alert('복사되었습니다.');
+   });
+    //객체 대상 및 해당 영역지정
+   clip.glue( 'clipBoardCopyBtn', 'clipBoardCopyBtnWrap' );
+}
+</script>
 
 
 <div id="contents_area" onCopy="javascript:copy_play();">
