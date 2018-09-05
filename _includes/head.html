@@ -13,8 +13,34 @@
 
     ga('create', 'UA-123152222-2', 'auto');
     ga('send', 'pageview');
+   
+    
+    function copy_play()
+    {
+        if (window.event)
+        {
+            window.event.returnValue = true;
+            window.setTimeout('capy_plus()', 25);
+        }
+    }
+    
+    function capy_plus()
+    {
+        if (window.clipboardData)
+        {
+            var txt = window.clipboardData.getData('Text');
 
+            var retUrl = document.URL;
+            txt = txt +'nn출처 :'+retUrl;
+            var result = window.clipboardData.setData('Text', txt);
+        }
+    }
+    
 </script>
+
+<!-- 복사 라이브러리 -->
+<script  src="https://cdn.rawgit.com/zenorocha/clipboard.js/v2.0.0/dist/clipboard.min.js" ></script>
+
 
 <head>
     <meta charset="utf-8">
