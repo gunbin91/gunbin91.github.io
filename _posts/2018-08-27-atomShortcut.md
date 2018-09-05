@@ -74,9 +74,9 @@ if (window.clipboardData) {
 	})
 } else {
 	var clip = new ZeroClipboard($(".btn_clipboard_copy"), {
-		moviePath: "assets/js/ZeroClipboard.swf";
+		moviePath: "assets/js/ZeroClipboard.swf"
 	});
-	clip.addEventListener('mousedown',function() {
+	clip.addEventListener('mouseDown',function() {
 		clip.setText(urlCopy+"제로클립보드 작동");
 	});
 }
