@@ -59,5 +59,10 @@ categories: [ etc ]
 - <font color="orange">Shift + Ctrl + ←, →</font>
 <br/> 단어별 텍스트 선택
 
+#### 참고
+Atom에디터는 컴파일(실행)기능이 따로 없기 때문에 번거로움이 있다.<br/>따라서 이런 번거로움을 해결해줄 <font color="deeppink">script</font>라는 패키지를 이용하여 해당 기능을 추가할 수 있다.<br/>
+
+#### ▶ 실행 단축키 : ctrl + shift + b
+
 <br/>
 <hr/>

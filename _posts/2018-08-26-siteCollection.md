@@ -46,6 +46,13 @@ categories: [ etc ]
 - <a href="https://disqus.com/">https://disqus.com/</a>
 <br/>
 
+## 동영상 Modal 라이브러리
+<p>
+    버튼 또는 이미지 클릭 시 동영상이 모달창으로 구현시켜주는 라이브러리
+</p>
+- <a href="https://appleple.github.io/modal-video/">https://appleple.github.io/modal-video/</a>
+<br/>
+
 ## 실시간 채팅 API
 <p>
 실시간 채팅또한 API를 통해 데이터베이스 없이 구현이 가능하다.<br/>
