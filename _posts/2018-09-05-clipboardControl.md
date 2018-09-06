@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Javascript 클립보드 제어<br/>( 자동 출처 삽입기능 )"
+title: "Javascript 클립보드 제어( 자동 출처 삽입 )"
 tags: [ etc, javascript, clipboard ]
 date: 2018-09-05
 categories: [ etc ]
