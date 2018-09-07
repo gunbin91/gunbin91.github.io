@@ -26,7 +26,7 @@ categories: [ network ]
 # 수동으로 사설 IP설정하기
 사설IP부여를 DHCP가 아닌 수동으로 하기 위해 <font color="orange">제어판 -> 네트워크 및 인터넷 -> 네트워크 및 공유센터 -> 연결:이더넷 클릭 -> 속성 -> 인터넷 프로토콜 버전 4 (TCP/IPv4) 선택 -> 속성</font>에서 아래와 같이 설정할 수 있다.<br/>
 
-<img src="{{ site.baseurl }}/assets/post_img/ipv4.jpg" height="250px" style="padding:0;margin:0;">
+<img src="{{ site.baseurl }}/assets/post_img/ipv4.JPG" height="250px" style="padding:0;margin:0;">
 
 - '다음 IP주소 사용' 선택
 - IP주소 : 수동 사설IP설정

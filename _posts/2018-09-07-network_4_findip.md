@@ -17,7 +17,7 @@ categories: [ network ]
 <font color="deeppink">제어판 -> 네트워크 및 공유센터 
     -> 연결:이더넷 or 연결:와이파이 클릭 -> 자세히</font><br/>
 
-<img src="{{ site.baseurl }}/assets/post_img/window_ip.jpg" height="250px" style="padding:0;margin:0;">
+<img src="{{ site.baseurl }}/assets/post_img/window_ip.JPG" height="250px" style="padding:0;margin:0;">
 
 - <font color="orange">IPv4주소</font> : 현재 기기의 사설 IP주소
 - <font color="orange">IPv4 기본 게이트웨이</font> : 라우터(공유기)의 사설 IP주소
@@ -26,7 +26,7 @@ categories: [ network ]
 또는 <font color="deeppink">CMD(명령프롬프트) -> 'ipconfig'입력</font>
 <br/>
 
-<img src="{{ site.baseurl }}/assets/post_img/cmd_ip.jpg" height="250px" style="padding:0;margin:0;">
+<img src="{{ site.baseurl }}/assets/post_img/cmd_ip.JPG" height="250px" style="padding:0;margin:0;">
 
 - <font color="orange">IPv4주소</font> : 현재 기기의 사설 IP주소
 - <font color="orange">기본 게이트웨이</font> : 라우터(공유기)의 사설 IP주소
