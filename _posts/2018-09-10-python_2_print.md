@@ -31,31 +31,42 @@ name = "Swaroop"
 #### ▶ 위치 지정하여 삽입
 print("<font color="orange">{1}</font> was <font color="orange">{0}</font> years old when he"<font color="orange">.format(age, name)</font>)
 <br/>=> <font color="deeppink">Swaroop</font> was <font color="deeppink">20</font> years old when he
+<br/><br/>
 
 #### ▶ 순서대로 삽입
 print("<font color="orange">{}</font> was <font color="orange">{}</font> years old when he"<font color="orange">.format(name, age)</font>)
 <br/>=> <font color="deeppink">Swarrop</font> was <font color="deeppink">20</font> years old when he
+<br/><br/>
 
 #### ▶ 변수로 지정하여 삽입
 print('<font color="orange">{name}</font> wrote <font color="orange">{book}</font>'<font color="orange">.format(name='Swaroop',book='A Byte of Python')</font>)
 <br/>=> <font color="deeppink">Swaroop</font> wrote <font color="deeppink">A Byte of Python</font>
-    
+<br/><br/>
+
 #### ▶ 소수점표기 ( 소수점 이하 자릿수 지정)
 print('<font color="orange">{0:.3f}</font>'.format(1.0/3))
 <br/>=> 0.333
 > “어쩌구 %d 저쩌구”.%3 의 형식으로도 가능하다. ( %s, %f … )
+<br/><br/>
 
 #### ▶ 칸채우기
 print('<font color="orange">{0:a^11}</font>'.format('hello')) 
 <br/>=> aaa<font color="deeppink">hello</font>aaa
 <br/>11자리 중 나머지를 'a'로 채우고 hello 가운데 정렬(^)<br/>
 ( 가운데정렬(^), 왼쪽 정렬(<), 오른쪽 정렬(>) )
+<br/><br/>
 
 #### ▶ 문자열,데이터 붙이기
 print ('Area is', area, breadth, "aaa")<br/>
 => Area is (area값) (breadth값) aaa<br/>
 python에서 <font color="orange">print문은 콤마(,)로 이어서 출력이 가능</font>하다. 문자열 뿐만 아니라 정수형 데이터 또한 가능
+<br/><br/>
 
+#### ▶ %를 이용하여 데이터삽입
+print("aa <font color="orange">%s</font> aa" % "바보")<br/>
+=> aa 바보 aa<br/>
+%s, %d 등을 이용하여 삽입할때는 <font color="orange">뒤에 %를 붙여 데이터를 삽입</font>할 수 있다.
+<br/><br/>
 
 # print함수 줄바꿈 무시하기
 print()함수는 자동으로 한번 출력 후 줄바꿈이 실행되는데, 이를 무시할 수도 있다.<br/>
