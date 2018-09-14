@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "1. Python ?"
-tags: [ python ]
+tags: [ python, 파이썬 ]
 date: 2018-09-10
 categories: [ python ]
 ---

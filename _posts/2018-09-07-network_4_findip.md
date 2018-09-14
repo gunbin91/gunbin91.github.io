@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "4. IP Address 알아내기"
-tags: [ network, IpAddress, public ip, private ip ]
+tags: [ network, IpAddress, public ip, private ip, 파이썬 ]
 date: 2018-09-07
 categories: [ network ]
 ---

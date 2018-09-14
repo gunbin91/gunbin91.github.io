@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "3. NAT( NetworkAddressTranslation )"
-tags: [ network, NAT ]
+tags: [ network, NAT, 파이썬 ]
 date: 2018-09-07
 categories: [ network ]
 ---

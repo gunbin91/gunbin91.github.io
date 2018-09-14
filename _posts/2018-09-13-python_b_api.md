@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "11. 파이썬 내장함수"
-tags: [ python, python api ]
+tags: [ python, python api, 파이썬 ]
 date: 2018-09-13
 categories: [ python ]
 ---

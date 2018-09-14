@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "9. 예외처리"
-tags: [ python, python exception ]
+tags: [ python, python exception, 파이썬 ]
 date: 2018-09-12
 categories: [ python ]
 ---

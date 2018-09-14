@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "2. 문자열과 출력"
-tags: [ python, python string, python print ]
+tags: [ python, python string, python print, 파이썬 ]
 date: 2018-09-10
 categories: [ python ]
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "7. 클래스"
-tags: [ python, python class ]
+tags: [ python, python class, 파이썬 ]
 date: 2018-09-12
 categories: [ python ]
 ---

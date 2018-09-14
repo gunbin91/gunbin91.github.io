@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "6. 포트 포워딩 ( port forwarding )"
-tags: [ network, port ]
+tags: [ network, port, 파이썬 ]
 date: 2018-09-07
 categories: [ network ]
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Flask 웹 프레임워크"
-tags: [ python, flask ]
+tags: [ python, flask, 파이썬, 플라스크 ]
 date: 2018-09-13
 categories: [ python ]
 ---
