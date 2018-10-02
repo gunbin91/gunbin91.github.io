@@ -201,6 +201,15 @@ redirect(url_for('member',page='login.html',state=1))
 return render_template('test.html', re=result)의 형식으로 html파일로 데이터를 넘겨줄 수 있다.
 <br/><br/>
 
+## css파일과 js파일의 경로
+flask에서 html파일을 template디렉토리 아래에서 찾게되듯이,<font color="deeppink">css, js파일 또한 지정된 'static'라는 디렉토리</font> 아래에서 찾게 된다.<br/>
+따라서 static디렉토리 내부에 css, js파일을 나누어 배치하고,
+html파일에서 해당 파일들을 불러올 때는 <font color="orange">url_for('static', filename='css/base.css')</font> 등으로 불러올 수 있다.
+
+## 캐시 새로고침
+불러온 css파일의 경우 캐시에 저장되어 보여주기 때문에,<br/> 새로고침만으로 수정된 결과를 바로 확인할 수 없다.
+따라서 캐시를 초기화 시켜주어야 하는데<br/><font color="orange">'ctrl + shift + r'</font>단축키를 이용하면 캐시초기화및 새로고침을 동시에 해줄 수 있다.
+
 ## DB 쿼리실행
 {% highlight ruby %}
    try:
