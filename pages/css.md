@@ -3,7 +3,7 @@ layout: page
 title : CSS
 permalink: /css/
 subtitle: "Style" 
-feature-img: "assets/img/pexels/wall_e.jpeg"
+feature-img: "assets/img/pexels/book-glass.jpeg"
 category : css
 date : 2018-10-29
 tags: [css]
