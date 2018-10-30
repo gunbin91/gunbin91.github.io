@@ -59,7 +59,7 @@ function canvas_view(imageObj){
     
     # canvas에 이미지 복제
     var ctx= canvas.getContext("2d");
-    ctx.drawImage(imageObj, 0, 0);
+    ctx.drawImage(imageObj, 0, 0, imageObj.width, imageObj.height);
     
     # 복제된 이미지에 대한 픽셀정보를 가져옴
     var id= ctx.getImageData(0, 0, canvas.width, canvas.height);
@@ -79,6 +79,36 @@ function canvas_view(imageObj){
     ctx.putImageData(id, 0, 0);
 }
 {% endhighlight %}
+<script>
+    function canvas_view(imageObj){
+        var canvas = document.getElementById("can");
+        canvas.width = imageObj.width;
+        canvas.height = imageObj.height;
+        var ctx= canvas.getContext("2d");
+        ctx.drawImage(imageObj, 0, 0, imageObj.width, imageObj.height);
+        var id= ctx.getImageData(0, 0, canvas.width, canvas.height);
+        for (var i = 0; i < id.data.length; i += 4) {
+            if ( id.data[i] == 255 ){
+                id.data[i] = 0;
+                id.data[i+1] = 0;
+                id.data[i+2] = 0;
+                id.data[i+3] = 255;
+            }    
+        }
+        ctx.putImageData(id, 0, 0);
+    }
+</script>
+#### ▶ rgb(255,255,255) -> rgb(0,0,0)
+<div style="display:table;">
+<div style="float:left;width:48%; text-align:center;">
+<h5>before</h5>
+<img src="/assets/img/portfolio/github.png" alt="이미지" onload="canvas_view(this);">
+</div>
+<div style="float:left;width:48%; text-align:center;">
+<h5>after</h5>
+<canvas id="can"></canvas>
+</div>
+</div>
 
-
+<br/>
 <br/>
