@@ -18,7 +18,7 @@ order: 7
         </p>
     <h3 align="left">
         <a href="{{ post.url | absolute_url }}" style="text-decoration:none;">
-        [ Etc ] {{ post.title }}
+        [ CSS ] {{ post.title }}
         </a>
     </h3>
     </div>
