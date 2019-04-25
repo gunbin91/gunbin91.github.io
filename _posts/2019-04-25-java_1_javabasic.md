@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Java 프로그래밍 개요"
+title: "1. Java 프로그래밍 개요"
 tags: [ java ]
 date: 2019-04-25
 categories: [ java ]
