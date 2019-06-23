@@ -1,13 +1,13 @@
 --- 
 layout: page
-title : DataBase
-permalink: /db/
-subtitle: "Database basic" 
-feature-img: "assets/img/pexels/db.jpg"
-category : db
-date : 2019-05-08
-tags: [db]
-order: 9
+title : javascript
+permalink: /javascript/
+subtitle: "자바스크립트" 
+feature-img: "assets/img/pexels/js.jpg"
+category : javascript
+date : 2019-05-24
+tags: [javascriprt]
+order: 8
 ---
 
 <div align="center">
@@ -18,7 +18,7 @@ order: 9
         </p>
     <h3 align="left">
         <a href="{{ post.url | absolute_url }}" style="text-decoration:none;">
-        [ DB ] {{ post.title }}
+        [ JavaScript ] {{ post.title }}
         </a>
     </h3>
     </div>

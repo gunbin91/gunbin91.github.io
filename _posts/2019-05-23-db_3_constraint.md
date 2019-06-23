@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "3. 제약조건(Constraint)"
-tags: [ db, constraint ]
+tags: [ sql, constraint ]
 date: 2019-05-23
-categories: [ db ]
+categories: [ sql ]
 ---
 
 <p align="center">

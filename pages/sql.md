@@ -1,13 +1,13 @@
 --- 
 layout: page
-title : Java
-permalink: /java/
-subtitle: "자바" 
-feature-img: "assets/img/pexels/javacap.jpg"
-category : java
-date : 2019-05-23
-tags: [java, web]
-order: 9
+title : SQL
+permalink: /sql/
+subtitle: "SQL in Oracle" 
+feature-img: "assets/img/pexels/db.jpg"
+category : sql
+date : 2019-05-08
+tags: [sql]
+order: 11
 ---
 
 <div align="center">
@@ -18,7 +18,7 @@ order: 9
         </p>
     <h3 align="left">
         <a href="{{ post.url | absolute_url }}" style="text-decoration:none;">
-        [ Java ] {{ post.title }}
+        [ DB ] {{ post.title }}
         </a>
     </h3>
     </div>
