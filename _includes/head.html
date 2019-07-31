@@ -175,7 +175,10 @@ window.addEventListener('copy', function (e){
     }
 </style>
 
-<div class="adsens_side">
+<div class="adsens_side" id="adsens_side">
+    <div>
+        <a href="javascript:close_side();">[Close]</a>
+    </div>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <!-- 사이드바1 -->
     <ins class="adsbygoogle"
@@ -186,3 +189,10 @@ window.addEventListener('copy', function (e){
          (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </div>
+
+<script>
+function close_side(){
+    document.getElementById("adsens_side").style.display = "none";
+}
+</script>
+
