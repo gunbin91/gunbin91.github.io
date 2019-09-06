@@ -1,6 +1,6 @@
 --- 
 layout: page
-title : JSP
+title : Jsp
 permalink: /jsp/
 subtitle: "Web development with JSP" 
 feature-img: "assets/img/pexels/jsp_img.jpg"

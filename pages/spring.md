@@ -1,13 +1,13 @@
 --- 
 layout: page
-title : SQL
-permalink: /sql/
-subtitle: "SQL in Oracle" 
-feature-img: "assets/img/pexels/db.jpg"
-category : sql
-date : 2019-05-08
-tags: [sql]
-order: 12
+title : Spring
+permalink: /spring/
+subtitle: "Web development with SPRING" 
+feature-img: "assets/img/pexels/jsp_img.jpg"
+category : spring
+date : 2019-09-06
+tags: [spring, web]
+order: 11
 ---
 
 <div align="center">
@@ -18,7 +18,7 @@ order: 12
         </p>
     <h3 align="left">
         <a href="{{ post.url | absolute_url }}" style="text-decoration:none;">
-        [ DB ] {{ post.title }}
+        [ SPRING ] {{ post.title }}
         </a>
     </h3>
     </div>

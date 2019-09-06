@@ -10,13 +10,12 @@ order: 0
 # Info
 
 - <b> Name : </b>조건빈(ChoGeonbin)
-- <b> Position : </b>풀스택 웹 개발
+- <b> Position : </b>웹 개발
 - <b> Age : </b>1991.04.15
 
 # Contact
 - <b> email : </b>
 <a href="mailto:gunbin91@gmail.com" title="{{ site.theme_settings.str_email }}">gunbin91@gmail.com</a>
-- <b> telephone : </b>~~010-2885-8163~~
 
 # Certification
 - 정보처리기사
