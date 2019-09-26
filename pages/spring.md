@@ -3,7 +3,7 @@ layout: page
 title : Spring
 permalink: /spring/
 subtitle: "Web development with SPRING" 
-feature-img: "assets/img/pexels/jsp_img.jpg"
+feature-img: "assets/img/pexels/spring.jpg"
 category : spring
 date : 2019-09-06
 tags: [spring, web]
