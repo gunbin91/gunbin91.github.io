@@ -15,6 +15,9 @@ categories: [ spring ]
 ### ▶ @ResponseBody
 컨트롤러 메서드위에 @ReponseBody를 붙이게 되면 <font color="orange">리턴되는 String값은 이동될 페이지가 아닌 웹 브라우저에 출력할 String</font>이 된다. 따라서 Gson객체와 함께 <font color="orange">AJAX처리에 주로 사용</font>된다.
 
+- Gson/JSON ?
+: <a href="/javascript/2019/05/25/javascript_5_ajax.html">Gson라이브러리 사용법</a>
+
 <br/>
 
 #### ※ @ResponseBody 한글인식처리
@@ -42,7 +45,6 @@ class="org.springframework.http.converter.StringHttpMessageConverter">
 	</mvc:message-converters>
 </mvc:annotation-driven>
 {% endhighlight %}
-
 
 <br/>
 

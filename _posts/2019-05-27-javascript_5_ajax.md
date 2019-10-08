@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "5. AJAX(비동기 통신)"
-tags: [ javascript cookie ]
+tags: [ javascript, ajax, gson ]
 date: 2019-05-25
 categories: [ javascript ]
 ---
@@ -261,12 +261,13 @@ String jobsJson = gson.toJson(jobs); // [전사, 암살자, 지원가, 전문가
 {% endhighlight %}
 
 - 컬렉션객체들 또한 JSON형태로 변환할 수 있다.
-: 단, Javascript는 컬렉션객체가 없기 때문에 적절한 형태로 받아야 한다.<br/>
+: 단, Javascript는 컬렉션객체가 없기 때문에 적절한 객체 형태로 받아올 수 있다.<br/>
 ex )  List<Map> => JSON 변환
 {% highlight ruby %}
 // Map은 배열에 스크립트객체를 담고있는 형태
 [
-{"time":1516952581519,"addr":"192.168.10.80","port":53030,"msg":"ㅓ오런ㅇㅁㄹ"},{"time":1516952584958,"addr":"192.168.10.80","port":53030,"msg":"듀르바듀르바~"}
+    {"time":1516952581519,"addr":"192.168.10.80","port":53030,"msg":"ㅓ오런ㅇㅁㄹ"},
+    {"time":1516952584958,"addr":"192.168.10.80","port":53030,"msg":"듀르바듀르바~"}
 ]
 {% endhighlight %}
 
@@ -299,8 +300,49 @@ GSON이 자바객체들을 어떤형식으로 변환시키는지 정리해보자
 하나의 JSON파일에 여러 개의 SQL문을 반환 할 때는 <font color="orange">List<Map>으로 처리</Map>하여<br/>
 스크립트에서 SQL문 마다 반환된 list를 반환해서 toJSON으로 처리하면 간단하게 해결할 수 있다.
 
+<br/>
 
+#### ▶ Gson Date객체 포맷팅
+Date타입의 객체는 가공하여 사용하기 까다로운 형태로 받아와지기 때문에 Gson에서 원하는 형식의 Date타입 객체를 JSON으로 변환할 수 있도록 제공된다.
 
+- 기본 Date타입의 JSON변환
+{% highlight ruby %}
+@ResponseBody
+public String timeNow() {
+    Date date = new Date();
+    Gson gson = new Gson();
+    return gson.toJson(date);
+}
+
+// => Oct 4, 2019 2:38:42 PM
+{% endhighlight %}
+
+<br/>
+
+- GsonBuilder를 이용한 Date포맷팅
+: Gsonbuilder객체를 통하여 Date형식을 포맷팅 한 후에 create()메서드를 통해 다시 Gson객체를 반환받을 수 있다.
+{% highlight ruby %}
+@ResponseBody
+public String timeNow() {
+	Date date = new Date();
+	GsonBuilder gb = new GsonBuilder();
+	gb.setDateFormat("yyyy/MM/dd HH:mm:ss");
+	Gson gson = gb.create();
+    
+    return gson.toJson(date);
+}
+
+// => 2019/10/04 14:45:49
+{% endhighlight %}
+
+- Spring 등록
+: 위와 같은 방식으로 Spring에서는 IOC에 등록하여 간편하게 뽑아 사용할 수도 있다.
+{% highlight ruby %}
+<bean class="com.google.gson.GsonBuilder" id="gsonBuilder">
+	<property value="yyyy/MM/dd HH:mm" name="dateFormat" />
+</bean>
+<bean id="gson" factory-method="create" factory-bean="gsonBuilder" />
+{% endhighlight %}
 
 
 <br/>
