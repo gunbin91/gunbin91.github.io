@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "11. MVC패턴 구현 지원 Controller-3"
+title: "11. MVC패턴 구현 지원 Controller3<br/> [ @ResponseBody, 자동 셋팅 ]"
 tags: [ spring, controller ]
 date: 2019-09-20
 categories: [ spring ]

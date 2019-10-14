@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "9. MVC패턴 구현 지원 Controller"
+title: "9. MVC패턴 구현 지원 Controller<br/> [ 설정 및 기본설계 ]"
 tags: [ spring, controller ]
 date: 2019-09-19
 categories: [ spring ]

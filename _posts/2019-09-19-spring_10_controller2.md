@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "10. MVC패턴 구현 지원 Controller-2"
+title: "10. MVC패턴 구현 지원 Controller2<br/> [ @RequestMapping, 매개 인자 셋팅 ]"
 tags: [ spring, controller ]
 date: 2019-09-19
 categories: [ spring ]
@@ -95,6 +95,24 @@ public class BetaController {
 }
 {% endhighlight %}
 => betaNewHandle()의 접근경로는 /beta/new
+
+<br/>
+
+### ▶ 메서드명을 경로로 사용( 경로 없는 @RequestMapping구조 )
+컨트롤러 <font color="orange">클래스의 @RequestMapping의 경로가 /*</font>로 끝나는 경우 컨트롤러 메서드위에 @RequestMapping어노테이션만 붙이게 되면, <font color="orange">메서드명 자체가 *에 해당하는 접근 경로</font>가 된다.
+
+{% highlight ruby %}
+@RequestMapping("/user/*")
+public class UserController  {
+     // /user/add 접근 시 호출
+     @RequestMapping
+     public String add(...) {}
+     
+     // /user/edit 접근 시 호출
+     @RequestMapping
+     public String edit(...) {}
+}
+{% endhighlight %}
 
 <br/>
 
