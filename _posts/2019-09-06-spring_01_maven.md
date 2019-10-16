@@ -22,7 +22,7 @@ Java기반 프로젝트의 라이프 사이클 관리를 목적으로 하는 빌
 
 <br/>
 
-## ▶ 설정 방법
+### ▶ 설정 방법
 
 #### 1. Maven프로젝트 생성
 New->Maven Project를 통해 새로 만들거나 또는<br/><font color="orange">이미 만들어진 프로젝트를 우 클릭-> configure -> convert to Maven project</font>로 변환
@@ -80,6 +80,30 @@ ex ) gson을 추가로 추가
 ( 단, 인터넷이 연결되어 있는 상태이어야 함! )
 <br/><br/>
 - oracle에서 배포하는 라이브러리는 메이븐에서의 다운로드를 막아두었기 때문에 메이븐에서 사용할 수 없고, jar파일을 다운로드하여 빌드패스로 추가할 수밖에 없다.
+
+<br/>
+
+## ◆ 외부 메이븐 연동
+메이븐을 따로 설치하여 이클립스와 연동하는 방법도 있다.
+
+<br/>
+
+### ▶ 메이븐설치
+<a href="http://maven.apache.org/download.cgi">http://maven.apache.org/download.cgi</a>로 접속하여 MAVEN을 다운받는다.
+<br/>
+1. apache-maven-3.6.2-bin.zip 다운/압축해제
+2. apache-maven-3.6.2\conf\settings.xml 수정<br/>
+&lt;localRepository>메이븐 jar다운받을 경로설정&lt;/localRepository>
+3. 메이븐 환경설정 ( JAVA_HOME처럼 MAVEN_HOME추가 )
+4. CMD -> mvn -version 명령어로 환경변수가 셋팅되었는지 확인
+
+<br/>
+
+### ▶ 메이븐연동
+Eclipse(STS)실행 후 Window->Preferences->Maven
+1. Installations에 메이븐파일 추가
+2. User Settings에 Global Settings, User Settings에 설정했던 settings.xml경로로 변경<br/>
+( 아래 Local Repository에서 메이븐으로 다운받는 라이브러리의 경로를 수정할 수도 있다. )
 
 <br/>
 
