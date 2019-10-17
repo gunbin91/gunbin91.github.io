@@ -155,7 +155,7 @@ public class Test(){
 
 <br/>
 
-#### ▶ 메서드 매개인자 자동주입( @Resource )
+#### ▶ 메서드 매개인자 의존주입( @Resource )
 @Autowire와 마찬가지로 의존 주입 어노테이션으로 <font color="orange">@Resource</font>가 있다. 이는 스프링이 아닌 자바에서 지원하는 어노테이션으로, @Autowire과 달리 id나 type이 아닌 <font color="orange">스프링빈에 등록되어 있는 name속성을 통해 주입</font>한다.
 {% highlight ruby %}
 @Controller
@@ -175,6 +175,37 @@ public class Test(){
 
 <br/>
 
+#### ▶ DAO객체 등록( @Repository )
+@Controller, @Service처럼 DAO객체임을 알리는 어노테이션으로 @Repository를 사용한다.<br/>
+이 세개의 어노테이션은 @Component를 구체화 한 것이다. <br/>그 중 @Repository를 이용하여 등록하게 되면 unchecked exception, DataAccessException등을 처리할 수 있기 때문에 <font color="orange">DAO객체는 @Repository를 이용하여 등록</font>한다.<br/>
+
+- DAO설계
+: 스프링에서는 대부분 Mybatis를 사용함으로 DAO객체를 설계할 때 sqlSessionTemplate객체를 이용하여 설계한다.
+{% highlight ruby %}
+@Repository
+public class CmDao{
+
+    protected SqlSessionTemplate sqlSessionTemplate;
+	
+	public void setSqlSessionTemplate(SqlSessionTemplate sqlSession) {
+		this.sqlSessionTemplate = sqlSession;
+	}
+
+	@Resource(name="sqlSessionTemplate")
+	public void Init(SqlSessionTemplate sqlSessionTemplate){
+		this.setSqlSessionTemplate(sqlSessionTemplate);
+	}
+    
+    public Object selectOne(String statementName) {
+		return sqlSessionTemplate.selectOne(statementName);
+	}
+    
+    ...
+	
+}
+{% endhighlight %}
+
+<br/>
 ※ 등록된 컨트롤러 확인 
 : 이클립스 왼쪽의 Spring Elements - Beans - Controller 에서 확인할 수 있다.
 
