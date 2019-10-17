@@ -146,8 +146,32 @@ ctx.getBean("id");
 public class Test(){
     @Autowired
     TestService ts;
+    
+    @Autowired(required = false)
+    TestService2 ts2;
 }
 {% endhighlight %}
+- @Autowired에 <font color="orange">required속성을 false로 하게 되면 해당 객체가 스프링빈에 등록되어 있지 않아도 예외를 발생시키지 않는다.</font>
+
+<br/>
+
+#### ▶ 메서드 매개인자 자동주입( @Resource )
+@Autowire와 마찬가지로 의존 주입 어노테이션으로 <font color="orange">@Resource</font>가 있다. 이는 스프링이 아닌 자바에서 지원하는 어노테이션으로, @Autowire과 달리 id나 type이 아닌 <font color="orange">스프링빈에 등록되어 있는 name속성을 통해 주입</font>한다.
+{% highlight ruby %}
+@Controller
+public class Test(){
+    @Resource(name="ts")
+    TestService ts;
+    
+    TestService2 ts2;
+    
+    @Resource(name="tstwo")
+    public void setTs2(TestService2 ts2){
+        this.ts2 = ts2;
+    }
+}
+{% endhighlight %}
+- @Resource어노테이션은 주로 위와 같이 설정메서드(setter, ..)등에 <font color="orange">매개인자 의존주입에 주로 사용</font>된다.
 
 <br/>
 
