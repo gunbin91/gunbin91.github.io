@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "6. Jquery(제이쿼리)"
+title: "6. Jquery(제이쿼리) - 연동 및 객체제어"
 tags: [ javascript, jquery ]
 date: 2019-07-01
+sub_title: "Jquery"
 categories: [ javascript ]
 ---
 

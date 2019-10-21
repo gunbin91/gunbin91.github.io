@@ -1,6 +1,6 @@
 --- 
 layout: page
-title : javascript
+title : javascript(Jquery)
 permalink: /javascript/
 subtitle: "자바스크립트" 
 feature-img: "assets/img/pexels/js.jpg"
@@ -18,7 +18,12 @@ order: 8
         </p>
     <h3 align="left">
         <a href="{{ post.url | absolute_url }}" style="text-decoration:none;">
-        [ JavaScript ] {{ post.title }}
+        {% if post.sub_title  %}
+            [ {{ post.sub_title }} ]
+        {% else %}
+            [ JavaScript ]
+        {% endif %} 
+            {{ post.title }}
         </a>
     </h3>
     </div>
