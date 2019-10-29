@@ -209,6 +209,8 @@ public class CmDao{
 ※ 등록된 컨트롤러 확인 
 : 이클립스 왼쪽의 Spring Elements - Beans - Controller 에서 확인할 수 있다.
 
+> &lt;bean>태그를 이용하여 등록한 객체들은 서버가 실행됨과 동시에 객체가 생성되지만, <font color="orange">&lt;context:component-scan>태그를 이용하여 등록한 객체들은 @Componant, @Controller, @Service, @Repository등의 어노테이션이 붙어있는 객체들만 생성</font>이 된다. 
+
 <br/>
 
 ## ◆ 스프링 필터 설정
