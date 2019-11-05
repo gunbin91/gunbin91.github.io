@@ -1,9 +1,10 @@
 ---
 layout: post
 title: "Ajax-HTML(JSP)페이지 응답 제어"
-tags: [ etc, ajax, 페이지 ajax, 가상태그 ]
-date: 2019-10-16
-categories: [ etc ]
+tags: [ jquery, ajax, 페이지 ajax, 가상태그 ]
+date: 2019-10-21
+sub_title: "Jquery"
+categories: [ javascript ]
 ---
 
 <p align="center">
