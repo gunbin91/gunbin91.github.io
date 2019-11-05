@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "8. form데이터 Ajax요청( serialize() )"
+title: "form데이터 Ajax요청 - serialize()"
 tags: [ javascript, jquery, serialize ]
 date: 2019-10-21
 sub_title: "Jquery"
