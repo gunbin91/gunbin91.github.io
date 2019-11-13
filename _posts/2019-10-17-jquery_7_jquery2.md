@@ -99,28 +99,39 @@ Jquery에서는 요청페이지의 contentType에 따라 다른 객체 값이 �
 
 <br/>
 
-### ▶ data의 킷값에 해당하는 value값들을 배열로 보낼 때,( ex) "front" : [ "a", "b", "c" ] )
-주소창의 키의 문자열은 [ ] 가 붙어서 날아가게 된다. ( ex ) .jsp?front[]=a&front[]=b... )
-따라서 배열데이터를 뽑아낼 때는 request.getParameterValues("front[]") 로 뽑아야한다.
+### ▶ data의 킷값에 해당하는 value값들을 배열로 보낼 때
+ex) "front" : [ "a", "b", "c" ]<br/>
+데이터를 <font color="orange">배열형식으로 보낼 때 주소창 키의 문자열은 [ ] 가 붙어</font>서 날아가게 된다. <br/>( ex ) .jsp?front[]=a&front[]=b... )<br/>
+따라서 배열데이터를 뽑아낼 때는 request.getParameterValues("front[]") 로 뽑아야한다.<br/>
 단, 애초부터 "front[]"로 킷값을 잡게 된다면, 자동적으로 []가 붙지 않는다.
 
-## ◆ AJAX 단순처리
-: $.ajax() 방식을 get, post 방식에 따라 좀 더 단순, 편리하게 처리할 수 있다.
-▶ get방식 ajax요청
-$("#t1").on("click", function() {
-$.get("02ajax.jsp", {
-"word" : "ajax",
-"front" : [ "java", "jsp", "css", "jquery" ]
-}, function(rst) {
-window.alert("rst = " + rst);
-});
-});
-- 형식 : $.get( url, data, callbackFunction ); 
-: 위의 형식으로 get방식의 요청을 .ajax대신 .get으로 보낼 수 있다.
-( data부분은 $.ajax()방식에서 "data"를 처리할 때와 같은 형식으로 한다. )
+<br/>
 
-▶ post방식 ajax요청
-: get방식과 똑같이 작성하며, $.post만 달라진다.
+## ◆ AJAX 단순처리
+$.ajax() 방식을 get, post 방식에 따라 좀 더 단순, 편리하게 처리할 수 있다.
+
+<br/>
+
+### ▶ get방식 ajax요청
+형식 : $.get( url, data, callbackFunction ); <br/>
+위의 형식으로 get방식의 요청을 .ajax대신 .get으로 보낼 수 있다.<br/>
+( data부분은 $.ajax()방식에서 "data"를 처리할 때와 같은 형식으로 한다. )
+{% highlight ruby %}
+$("#t1").on("click", function() {
+    $.get("02ajax.jsp", {
+        "word" : "ajax",
+        "front" : [ "java", "jsp", "css", "jquery" ]
+    }, function(rst) {
+        window.alert("rst = " + rst);
+    });
+});
+{% endhighlight %}
+
+
+<br/>
+
+### ▶ post방식 ajax요청
+get방식과 똑같이 작성하며, $.post만 달라진다.
 
 
 
