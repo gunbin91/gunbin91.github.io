@@ -66,6 +66,24 @@ Request -> <b style="color:purple">Filter</b> -> DispatcherServlet ->  Controlle
 </interceptors>
 {% endhighlight %}
 
+
+<br/>
+아래와 같은 방식으로 어노테이션 핸들러 매핑을 등록할 때 같이 등록하는 방식도 가능하다.<br/>
+> 어노테이션 매핑은 bean으로 등록하지 않아도 처리 가능하나, 인터셉터를 아래와 같은 방식으로 등록할 때는 아래와 같이 등록해야한다.
+
+{% highlight ruby %}
+<bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping"
+		p:alwaysUseFullPath="true">
+        <property name="interceptors">
+            <list>
+                <ref bean="cmLoginInterceptor" />
+                <ref bean="cmInterceptor" />
+            </list>
+        </property>
+</bean>
+{% endhighlight %}
+
+
 <br/>
 
 #### ▶ ex
