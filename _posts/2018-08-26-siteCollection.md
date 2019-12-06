@@ -74,5 +74,15 @@ categories: [ etc ]
 </p>
 - https://fonts.google.com/?authuser=1
 
+## 소스비교 사이트( DIFF )
+형상관리할 때 수정부분을 비교할 수 있는 DIFF에는 여러 종류가 있지만,
+사이트 내에서도 비교할 수 있다.
+
+- <a href="https://www.diffchecker.com/diff">https://www.diffchecker.com/diff</a>
+: 단순 텍스트를 복사하여 비교할 수 있다.
+
+- <a href="https://www.diffnow.com/compare-clips">https://www.diffnow.com/compare-clips</a>
+: 파일 업로드를 통해 비교할 수 있으며, 확장자를 구분하여 좀 더 구별하기 쉽다
+
 <br/>
 <hr/>
