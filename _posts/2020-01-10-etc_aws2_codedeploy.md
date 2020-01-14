@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "AWS2. CodeDeploy<br/>( AWS S3를 이용한 배포 자동화 )"
-tags: [ etc, aws, codedeploy, aws s3, appspec.yml ]
+title: "2. CodeDeploy<br/>( AWS S3를 이용한 배포 자동화 )"
+tags: [ aws, codedeploy, aws s3, appspec.yml ]
 date: 2020-01-10
-categories: [ etc ]
+categories: [ aws ]
 ---
 
 <p align="center">

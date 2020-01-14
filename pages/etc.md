@@ -12,17 +12,22 @@ order: 100
 
 <div align="center">
 {% for post in site.categories[page.category] %}
-   <div style="width:75%;">
+    {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+  {% if thecycle == 'odd' %}
+   <div style="width:50%; float:left;">
+    {% else %}
+    <div style="width:50%; float:right;">
+    {% endif %}
    <p class="meta" align="left" style="line-height:0px;">
               {{ post.date | date: "%B %-d, %Y" }}
         </p>
-    <h3 align="left">
+    <h4 align="left">
         <a href="{{ post.url | absolute_url }}" style="text-decoration:none;">
         [ Etc ] {{ post.title }}
         </a>
-    </h3>
+    </h4>
     </div>
-    <hr/>
+<!--    <hr/>-->
 {% endfor %}
 </div>
 

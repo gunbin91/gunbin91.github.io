@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "AWS1. Putty, WinSCP사용법<br/>(Window서버 putty접속하는 방법)"
-tags: [ etc, aws, putty, winscp ]
+title: "1. Putty, WinSCP사용법<br/>(Window서버 putty접속하는 방법)"
+tags: [ aws, putty, winscp ]
 date: 2020-01-10
-categories: [ etc ]
+categories: [ aws ]
 ---
 
 <p align="center">
