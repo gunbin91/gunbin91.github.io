@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "3. 오토스케일링( AutoScaling )"
+title: "3. 오토스케일링( AutoScaling )<br/>( 오토스케일링 사용해보기 )"
 tags: [ aws, autoscaling ]
 date: 2020-01-13
 categories: [ aws ]
@@ -8,6 +8,7 @@ categories: [ aws ]
 
 <p align="center">
     수강신청이나 쇼핑몰의 타임세일등 특정시간이나 특정일에 사이트접속이 원활하지 못한것을 다들 경험해 보았을 것이다. AWS에서 제공하는 오토스케일링은 이를 좀 더 원활하게 해주는 서비스이다.
+    <br/><h5 style="color:red;">* 주의) 오토스케일링은 인스턴스를 복사하여 생성하기 때문에 EBS사용량이 많아질 수 있기 때문에 요금에 신경쓰도록 하자!</h5>
 </p><br/>
 
 <br/>
